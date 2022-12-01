@@ -8,16 +8,20 @@ Clean boiler plate code, directories, and submodules for ImGui development using
 - [Any SDL2 (VC) release](https://github.com/libsdl-org/SDL/releases) downloaded and path to it saved in `SDL2_DIR` environment variable
 - [Any Vulkan SDK release](https://vulkan.lunarg.com/sdk/home#windows) downloaded and path to it saved in `VK_SDK_PATH` and `VULKAN_SDK` environment variables
 
-## Build
+## Getting Started
+
+### Build
+
+1. Clone Repository
 
 ```cli
 git clone https://github.com/GreatGameDota/base-imgui.git
 cd base-imgui
 ```
 
-Open `base-imgui.sln` in Visual Studio 2022 (or earlier). Build and compile Debug version or Release version to x64 platform.
+2. Open `base-imgui.sln` in Visual Studio 2022 (or earlier). Build and compile Debug version or Release version to x64 platform.
 
-## Run
+### Run
 
 Run debug through Visual Studio or run built `exe` in generated bin subdirectories.
 
