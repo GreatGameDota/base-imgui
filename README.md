@@ -15,7 +15,7 @@ Clean boiler plate code, directories, and submodules for ImGui development using
 1. Clone Repository
 
 ```cli
-git clone https://github.com/GreatGameDota/base-imgui.git
+git clone --recurse-submodules https://github.com/GreatGameDota/base-imgui.git
 cd base-imgui
 ```
 
