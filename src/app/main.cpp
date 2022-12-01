@@ -537,6 +537,12 @@ int main(int, char**)
             ImGui::End();
         }
 
+        {
+            char buf[128];
+            sprintf(buf, "Dear ImGui SDL2+Vulkan example (%.1f FPS)", ImGui::GetIO().Framerate);
+            SDL_SetWindowTitle(window, buf);
+        }
+
         // 3. Show another simple window.
         if (show_another_window)
         {
