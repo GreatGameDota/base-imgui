@@ -62,7 +62,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\lib\imgui;..\lib\imgui\backends;%VULKAN_SDK%\include;%SDL2_DIR%\include;$(VcpkgCurrentInstalledDir)include\SDL2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\lib\imgui;..\lib\imgui\backends;..\lib\implot;%VULKAN_SDK%\include;%SDL2_DIR%\include;$(VcpkgCurrentInstalledDir)include\SDL2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>ImTextureID=ImU64;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
@@ -81,7 +81,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>ImTextureID=ImU64;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\lib\imgui;..\lib\imgui\backends;%VULKAN_SDK%\include;%SDL2_DIR%\include;$(VcpkgCurrentInstalledDir)include\SDL2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\lib\imgui;..\lib\imgui\backends;..\lib\implot;%VULKAN_SDK%\include;%SDL2_DIR%\include;$(VcpkgCurrentInstalledDir)include\SDL2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>None</DebugInformationFormat>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -109,16 +109,21 @@
     <ClCompile Include="..\lib\imgui\imgui_draw.cpp" />
     <ClCompile Include="..\lib\imgui\imgui_tables.cpp" />
     <ClCompile Include="..\lib\imgui\imgui_widgets.cpp" />
-    <ClCompile Include="..\lib\imgui\backends\imgui_impl_sdl.cpp" />
+    <ClCompile Include="..\lib\imgui\backends\imgui_impl_sdl2.cpp" />
     <ClCompile Include="..\lib\imgui\backends\imgui_impl_vulkan.cpp" />
+    <ClCompile Include="..\lib\implot\implot.cpp" />
+    <ClCompile Include="..\lib\implot\implot_items.cpp" />
+    <ClCompile Include="..\lib\implot\implot_demo.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\lib\imgui\imconfig.h" />
     <ClInclude Include="..\lib\imgui\imgui.h" />
     <ClInclude Include="..\lib\imgui\imgui_internal.h" />
-    <ClInclude Include="..\lib\imgui\backends\imgui_impl_sdl.h" />
+    <ClInclude Include="..\lib\imgui\backends\imgui_impl_sdl2.h" />
     <ClInclude Include="..\lib\imgui\backends\imgui_impl_vulkan.h" />
+    <ClInclude Include="..\lib\implot\implot.h" />
+    <ClInclude Include="..\lib\implot\implot_internal.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

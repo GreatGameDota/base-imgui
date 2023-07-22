@@ -9,6 +9,10 @@
       <UniqueIdentifier>{8CA0DC22-C023-4DFF-9454-0F588BBD470F}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="implot">
+      <UniqueIdentifier>{CC0ECCFE-610C-4089-AE81-2117CBCDBE0D}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
     <Filter Include="Header Files">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
@@ -37,11 +41,20 @@
     <ClCompile Include="..\lib\imgui\imgui_widgets.cpp">
       <Filter>imgui</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\imgui\backends\imgui_impl_sdl.cpp">
+    <ClCompile Include="..\lib\imgui\backends\imgui_impl_sdl2.cpp">
       <Filter>imgui</Filter>
     </ClCompile>
     <ClCompile Include="..\lib\imgui\backends\imgui_impl_vulkan.cpp">
       <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\implot\implot.cpp">
+      <Filter>implot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\implot\implot_items.cpp">
+      <Filter>implot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\implot\implot_demo.cpp">
+      <Filter>implot</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -54,10 +67,16 @@
     <ClInclude Include="..\lib\imgui\imgui_internal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\lib\imgui\backends\imgui_impl_sdl.h">
+    <ClInclude Include="..\lib\imgui\backends\imgui_impl_sdl2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\lib\imgui\backends\imgui_impl_vulkan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\implot\implot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\implot\implot_internal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
