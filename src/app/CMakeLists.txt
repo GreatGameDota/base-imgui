@@ -33,3 +33,8 @@ target_link_libraries(
 add_custom_command(TARGET base-imgui POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_if_different $<TARGET_FILE:SDL2::SDL2> $<TARGET_FILE_DIR:base-imgui>
 )
+
+# No console window for non-debug builds
+set_target_properties(base-imgui PROPERTIES WIN32_EXECUTABLE
+  $<AND:$<PLATFORM_ID:Windows>,$<NOT:$<CONFIG:Debug,RelWithDebInfo>>>
+)
